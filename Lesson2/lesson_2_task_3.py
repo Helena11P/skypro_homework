@@ -3,9 +3,9 @@ import math
 
 def square(a):
     s = a * a
-    return s
+    return math.ceil(s)
 
 
-s = square(7.1)
+s = square(6.5)
 
-print("Площадь квадрата:", math.ceil(s))
+print("Площадь квадрата:", s)

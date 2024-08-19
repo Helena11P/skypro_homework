@@ -5,8 +5,10 @@ def month_for_season(m):
         print("Весна")
     elif (m == 6) or (m == 7) or (m == 8):
         print("Лето")
-    else:
+    elif (m == 9) or (m == 10) or (m == 11):
         print("Осень")
+    else:
+        print("Введен недопустимый номер месяца")
 
 
 m = int(input("Введите номер месяца: "))

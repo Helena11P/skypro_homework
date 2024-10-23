@@ -9,8 +9,8 @@ class Project:
 
     def get_company_id(self):
         body = {
-            "login": "helena11pet@gmail.com",
-            "password": "Eyg1110?",
+            "login": "",
+            "password": "",
             "name": "Поток_100"
         }
         my_headers = {"Content-Type": "application/json"}
@@ -20,8 +20,8 @@ class Project:
 
     def get_key(self):
         body = {
-            "login": "helena11pet@gmail.com",
-            "password": "Eyg1110?",
+            "login": "",
+            "password": "",
             "companyId": self.get_company_id()
         }
         resp = requests.post(self.url + "/api-v2/auth/keys/get", json=body)
